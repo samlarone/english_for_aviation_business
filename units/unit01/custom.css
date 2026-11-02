@@ -1,0 +1,274 @@
+/* ===== LOCAL FONTS ===== */
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/inter-latin-600-normal.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/inter-latin-800-normal.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sarabun';
+  src: url('./fonts/sarabun-latin-400-normal.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sarabun';
+  src: url('./fonts/sarabun-latin-600-normal.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sarabun';
+  src: url('./fonts/sarabun-latin-400-italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sarabun';
+  src: url('./fonts/sarabun-thai-400-normal.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  unicode-range: U+0E00-U+0E7F;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sarabun';
+  src: url('./fonts/sarabun-thai-400-italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  unicode-range: U+0E00-U+0E7F;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sarabun';
+  src: url('./fonts/sarabun-thai-600-normal.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  unicode-range: U+0E00-U+0E7F;
+  font-display: swap;
+}
+
+/* ===== COLOURS ===== */
+:root {
+  --bg: #f2f5f9;
+  --ink: #0e2440;
+  --mute: #51647c;
+  --acc: #e4570f;
+  --sky: #1d6fa5;
+  --card: #fff;
+  --line: #cfd9e5;
+}
+
+/* ===== BASE ===== */
+.reveal {
+  font-family: 'Sarabun', sans-serif;
+  color: var(--ink);
+  font-size: 30px
+}
+
+.reveal-viewport {
+  background: var(--bg)
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+  font-family: 'Inter', 'Sarabun', 'sans-serif';
+  color: var(--ink);
+  text-transform: none;
+  letter-spacing: -.01em;
+  line-height: 1.1
+}
+
+.reveal h1 {
+  font-size: 2.3em;
+  font-weight: 800
+}
+
+.reveal h2 {
+  font-size: 1.5em;
+  font-weight: 800;
+  margin-bottom: .5em
+}
+
+.reveal h3 {
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--sky);
+  margin: .2em 0
+}
+
+.reveal .slides section {
+  text-align: left
+}
+
+.reveal ul,
+.reveal ol {
+  margin-left: 1em;
+  display: block
+}
+
+.reveal li {
+  margin: .3em 0
+}
+
+/* ===== TABLES (plain markdown tables) ===== */
+.reveal table {
+  font-size: .7em;
+  border-collapse: collapse;
+  width: 100%
+}
+
+.reveal table th,
+.reveal table td {
+  border-bottom: 1px solid var(--line);
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top
+}
+
+.reveal table th {
+  color: var(--mute);
+  font-weight: 600
+}
+
+.reveal table td:first-child {
+  font-weight: 600;
+  white-space: nowrap
+}
+
+/* ===== COMPONENTS (use inside the markdown as raw HTML) ===== */
+.tag {
+  position: absolute;
+  top: -95px;
+  left: 0;
+  font-size: .6em;
+  color: var(--mute);
+  font-weight: 600
+}
+
+.down {
+  position: absolute;
+  right: 0;
+  bottom: -70px;
+  font-size: .55em;
+  font-weight: 600;
+  color: #fff;
+  background: var(--sky);
+  padding: 4px 12px;
+  border-radius: 3px
+}
+
+.down.ex {
+  background: var(--acc)
+}
+
+.sub {
+  color: var(--mute);
+  font-size: .75em
+}
+
+.big {
+  font-size: 1.25em
+}
+
+.cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px
+}
+
+.cols3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-left: 6px solid var(--sky);
+  padding: 14px 20px;
+  font-size: .78em
+}
+
+.card.o {
+  border-left-color: var(--acc)
+}
+
+.th {
+  color: var(--mute);
+  font-size: .8em
+}
+
+.hl {
+  background: #fff1e0;
+  padding: 0 6px;
+  border-bottom: 2px solid var(--acc);
+  font-weight: 600
+}
+
+.box {
+  background: #fff;
+  border: 1px solid var(--line);
+  padding: 8px 14px;
+  font-weight: 600;
+  font-size: .6em;
+  margin-bottom: 8px
+}
+
+.scroll {
+  max-height: 520px;
+  overflow-y: auto;
+  font-size: .66em;
+  line-height: 1.45;
+  padding-right: 14px
+}
+
+.scroll p {
+  margin: .5em 0
+}
+
+/* ===== SLIDE CLASSES (set with <!-- .slide: class="..." -->) ===== */
+.reveal section.dark {
+  color: #fff
+}
+
+.reveal section.dark h1,
+.reveal section.dark h2 {
+  color: #fff
+}
+
+.reveal section.sm h2 {
+  font-size: 1.25em;
+  margin-bottom: .3em
+}
+
+.home-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
