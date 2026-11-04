@@ -1040,11 +1040,11 @@ I’d also like you to tell me about something you enjoy in English, such as a m
 
 ## Self-study task: Pop Corn
 
-Watch the movie "Catch Me If You Can" in English with Thai subtitles.
+Watch the movie "Catch Me If You Can" in English with English subtitles. If you are finding it difficult to understand, try to use Thai subtitles.
 
 [Catch Me If You Can](https://www.youtube.com/watch?v=s-7pyIxz8Qg)
 
-If you can't find it somewhere online you can watch a different movie of your choosing as long as it is in English.
+If you can't find the movie online you can watch a different movie of your choosing as long as it is in English.
 
 
 ---
